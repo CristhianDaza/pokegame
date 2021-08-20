@@ -7,6 +7,7 @@
     />
     <PokemonOptions
         :pokemons="pokemonArr"
+        @selection="checkAnswer($event)"
     />
   </div>
   <div v-else>
@@ -39,6 +40,9 @@ export default {
 
       const rndInt = Math.floor(Math.random() * 4)
       this.pokemon = this.pokemonArr[rndInt]
+    },
+    checkAnswer(pokemonId) {
+      this.showPokemon = true
     }
   },
   mounted() {
