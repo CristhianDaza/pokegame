@@ -4,6 +4,7 @@
         :src="imgSrc"
         alt="Pokemon"
         class="hidden-pokemon"
+        v-if="!showPokemon"
     >
   <img
     :src="imgSrc"
@@ -42,8 +43,6 @@ export default {
   }
   img {
     height: 200px;
-    position: absolute;
-    right: 37%;
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;

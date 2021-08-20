@@ -28,6 +28,7 @@ export default {
   ul {
     list-style-type: none;
     margin-top: 50px;
+    padding: 0;
   }
   li {
     background-color: white;
@@ -38,6 +39,7 @@ export default {
     width: 250px;
     transition: all .2s ease;
     color: #0d1117;
+    padding: 5px 15px;
   }
 
   li:hover {

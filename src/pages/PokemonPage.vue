@@ -17,6 +17,7 @@
       <h2>{{ message }}</h2>
       <button
           @click="newGame"
+          class="newGame"
       >Nuevo Juego</button>
     </template>
   </div>
@@ -76,3 +77,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .newGame {
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .newGame:hover {
+    background: rgba(255, 255, 255, .8);
+  }
+</style>
